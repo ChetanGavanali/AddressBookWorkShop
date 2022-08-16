@@ -116,3 +116,83 @@ body
 {
     position: absolute;
 }
+
+.input
+{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    opacity: 1;
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+
+}
+.row-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:20px 120px;
+}
+
+.input-label
+{
+    width: 100%;
+}
+.text
+{
+    text-align: left;
+    font: normal normal normal 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.address
+{
+    height: 105px;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    opacity: 1;
+    resize: none;
+}
+
+.place
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+}
+select
+{
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    opacity: 1;
+    margin-top: 8px;
+    padding: 10px ;
+    appearance: none;
+    background-image: url('../assets/icons/arrow.png');
+    background-position: right ;
+
+
+}
+.place-content
+{
+    width: 250px;
+    height: 50px;
+}
+.zip
+{
+    width: 100%;
+    height: 50px;
+}
