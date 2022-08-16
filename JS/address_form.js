@@ -1,3 +1,4 @@
+
 var stateToCityMap = {
     "Rajasthan": ["Bikaner", "Jaisalmer", "Jodhpur", "Udaipur", "Ajmer"],
     "Maharashtra": ["Mumbai", "Pune", "Nagpur", "Nashik", "Aurangabad", "Solapur"],
@@ -122,4 +123,34 @@ const getInputValueById =(id)=>{
 
     let value=document.querySelector(id).value;
     return value;
+}
+
+const resetForm = () => {
+
+    setValue('#name', '');
+    setValue('#phoneNumber', '');
+    setValue('#address', '');
+    setValue('#zip', '');
+    setSelectedIndex('#city', 0);
+    document.getElementById("city").disabled = true;
+    setSelectedIndex('#state', 0);
+    setTextValue('.name-error', "");
+    setTextValue('.phone-number-error', "");
+    setTextValue('.address-error', "");
+    setTextValue('.zip-error', "");
+
+}
+const setValue = (id, value) => {
+    const element = document.querySelector(id);
+    element.value = value;
+}
+
+const setSelectedIndex = (id, index) => {
+    const element = document.querySelector(id);
+    element.selectedIndex = index
+}
+
+const setTextValue = (id, value) => {
+    const element = document.querySelector(id);
+    element.textContent = value;
 }
