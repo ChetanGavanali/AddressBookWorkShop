@@ -87,8 +87,4 @@ class Contact
             throw "Zip is Invalid";
         }
     }
-
-
-    
-
 }
