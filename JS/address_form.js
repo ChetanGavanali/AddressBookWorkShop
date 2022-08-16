@@ -101,3 +101,25 @@ const createContactData=()=>{
     return contactData;
         
 }
+
+function createAndUpdateStorage(contactData)
+{
+    let contactList=JSON.parse(localStorage.getItem("ContactList"));
+    
+    if(contactList!=undefined)
+    {
+        contactList.push(contactData);
+    }
+    else
+    {
+        contactList=[contactData]
+    }
+
+    localStorage.setItem("ContactList",JSON.stringify(contactList));
+}
+
+const getInputValueById =(id)=>{
+
+    let value=document.querySelector(id).value;
+    return value;
+}
