@@ -87,4 +87,13 @@ class Contact
             throw "Zip is Invalid";
         }
     }
+
+
+    toString() 
+    {
+        return "Name: " + this.name + " ,Address: " + this.address + ",city: " + this.city +
+            ",state: " + this.state  + ",zip: " + this.zip + ",phone number : " + this.phoneNumber 
+
+    }
+
 }
